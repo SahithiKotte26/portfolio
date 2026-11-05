@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sai Sahithi Kotte – Final-year B.Tech student and aspiring Data Analyst skilled in Python, SQL, Power BI, and Data Analytics." />
+  <meta name="keywords" content="Data Analyst, Python, SQL, Power BI, Portfolio, Data Analytics, Internship" />
+  <meta property="og:title" content="Sai Sahithi Kotte | Data Analyst Portfolio" />
+  <meta property="og:description" content="Aspiring Data Analyst with expertise in Python, SQL, Power BI, and advanced data visualization." />
+  <title>Sai Sahithi Kotte | Data Analyst Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <span class="logo-bracket">&lt;</span>SSK<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="menubar">
+        <li role="none"><a href="#home"          class="nav-link" id="nav-home"          role="menuitem">Home</a></li>
+        <li role="none"><a href="#about"         class="nav-link" id="nav-about"         role="menuitem">About</a></li>
+        <li role="none"><a href="#skills"        class="nav-link" id="nav-skills"        role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects"      class="nav-link" id="nav-projects"      role="menuitem">Projects</a></li>
+        <li role="none"><a href="#internships"   class="nav-link" id="nav-internships"   role="menuitem">Internships</a></li>
+        <li role="none"><a href="#certifications"class="nav-link" id="nav-certifications"role="menuitem">Certifications</a></li>
+        <li role="none"><a href="#education"     class="nav-link" id="nav-education"     role="menuitem">Education</a></li>
+        <li role="none"><a href="#contact"       class="nav-link" id="nav-contact"       role="menuitem">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO / HOME ═══════════════════ -->
+  <section id="home" class="hero" aria-label="Hero section">
+    <div class="hero-bg-overlay"></div>
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">
+        Sai Sahithi<br />
+        <span class="gradient-text">Kotte</span>
+      </h1>
+      <div class="hero-typewriter">
+        <span class="typewriter-static">I'm a </span>
+        <span class="typewriter-text" id="typewriter" aria-live="polite"></span>
+        <span class="typewriter-cursor" aria-hidden="true">|</span>
+      </div>
+      <p class="hero-description">
+        Final-year B.Tech student passionate about transforming raw data into
+        actionable insights. Skilled in Python, SQL, Power BI, and advanced analytics —
+        building data-driven solutions that make an impact.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="hero-projects-btn">
+          <span>View My Work</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+        <a href="sahithi sureproed.pdf" download class="btn btn-secondary" id="hero-resume-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17v3a2 2 0 002 2h14a2 2 0 002-2v-3"/></svg>
+          <span>Download CV</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Internships</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="7">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ ABOUT ═══════════════════ -->
+  <section id="about" class="section" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — About</span>
+        <h2 class="section-title" id="about-heading">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Get to know the person behind the data</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <div class="about-image-frame">
+            <div class="about-avatar">
+              <div class="avatar-initials">SSK</div>
+              <div class="avatar-ring ring-1" aria-hidden="true"></div>
+              <div class="avatar-ring ring-2" aria-hidden="true"></div>
+              <div class="avatar-ring ring-3" aria-hidden="true"></div>
+            </div>
+            <div class="floating-badge badge-python" aria-hidden="true">
+              <span>🐍</span> Python
+            </div>
+            <div class="floating-badge badge-sql" aria-hidden="true">
+              <span>🗄️</span> SQL
+            </div>
+            <div class="floating-badge badge-powerbi" aria-hidden="true">
+              <span>📊</span> Power BI
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <h3 class="about-title">Aspiring Data Analyst &amp; <br/>Problem Solver</h3>
+          <p class="about-text">
+            I'm Sai Sahithi Kotte, a final-year B.Tech student with a deep passion for
+            data analytics and business intelligence. I love discovering patterns hidden
+            in complex datasets and translating them into clear, impactful stories.
+          </p>
+          <p class="about-text">
+            My journey into data began with curiosity about how numbers drive decisions.
+            Today, I leverage tools like Python, SQL, Power BI, and Excel to build
+            dashboards, predictive models, and data pipelines that drive real value.
+          </p>
+
+          <div class="about-cards">
+            <div class="about-info-card" id="about-education-card">
+              <div class="card-icon">🎓</div>
+              <div>
+                <h4>Education</h4>
+                <p>B.Tech in Computer Science</p>
+              </div>
+            </div>
+            <div class="about-info-card" id="about-interest-card">
+              <div class="card-icon">💡</div>
+              <div>
+                <h4>Interests</h4>
+                <p>Data Analytics, Visualization, ML</p>
+              </div>
+            </div>
+            <div class="about-info-card" id="about-goal-card">
+              <div class="card-icon">🎯</div>
+              <div>
+                <h4>Career Goal</h4>
+                <p>Data Analyst at a leading tech firm</p>
+              </div>
+            </div>
+            <div class="about-info-card" id="about-location-card">
+              <div class="card-icon">📍</div>
+              <div>
+                <h4>Location</h4>
+                <p>India — Open to Remote</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cta">
+            <a href="sahithi sureproed.pdf" download class="btn btn-primary" id="about-resume-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17v3a2 2 0 002 2h14a2 2 0 002-2v-3"/></svg>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline" id="about-contact-btn">Let's Connect</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SKILLS ═══════════════════ -->
+  <section id="skills" class="section section-alt" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Skills</span>
+        <h2 class="section-title" id="skills-heading">Technical <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Tools and technologies I work with</p>
+      </div>
+
+      <div class="skills-categories reveal">
+        <!-- Category: Programming -->
+        <div class="skill-category-block">
+          <h3 class="skill-category-title">
+            <span class="cat-icon">💻</span> Programming &amp; Databases
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card" id="skill-python">
+              <div class="skill-icon">🐍</div>
+              <h4>Python</h4>
+              <div class="skill-bar-wrap"><div class="skill-bar" data-width="90" style="--bar-color:#3b82f6"></div></div>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-card" id="skill-sql">
+              <div class="skill-icon">🗄️</div>
+              <h4>SQL</h4>
+              <div class="skill-bar-wrap"><div class="skill-bar" data-width="85" style="--bar-color:#8b5cf6"></div></div>
+              <span class="skill-pct">85%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Data Tools -->
+        <div class="skill-category-block">
+          <h3 class="skill-category-title">
+            <span class="cat-icon">📊</span> Data Analytics &amp; BI
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card" id="skill-powerbi">
+              <div class="skill-icon">📊</div>
+              <h4>Power BI</h4>
+              <div class="skill-bar-wrap"><div class="skill-bar" data-width="88" style="--bar-color:#06b6d4"></div></div>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-card" id="skill-excel">
+              <div class="skill-icon">📗</div>
+              <h4>Excel</h4>
+              <div class="skill-bar-wrap"><div class="skill-bar" data-width="92" style="--bar-color:#10b981"></div></div>
+              <span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-card" id="skill-pandas">
+              <div class="skill-icon">🐼</div>
+              <h4>Pandas</h4>
+              <div class="skill-bar-wrap"><div class="skill-bar" data-width="87" style="--bar-color:#f59e0b"></div></div>
+              <span class="skill-pct">87%</span>
+            </div>
+            <div class="skill-card" id="skill-numpy">
+              <div class="skill-icon">🔢</div>
+              <h4>NumPy</h4>
+              <div class="skill-bar-wrap"><div class="skill-bar" data-width="82" style="--bar-color:#ef4444"></div></div>
+              <span class="skill-pct">82%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Core Competencies -->
+        <div class="skill-category-block full-width">
+          <h3 class="skill-category-title">
+            <span class="cat-icon">🧠</span> Core Competencies
+          </h3>
+          <div class="competencies-grid">
+            <div class="competency-pill" id="comp-da">Data Analytics</div>
+            <div class="competency-pill" id="comp-vis">Data Visualization</div>
+            <div class="competency-pill" id="comp-eda">Exploratory Data Analysis</div>
+            <div class="competency-pill" id="comp-dash">Dashboard Design</div>
+            <div class="competency-pill" id="comp-stat">Statistical Analysis</div>
+            <div class="competency-pill" id="comp-etl">ETL Pipelines</div>
+            <div class="competency-pill" id="comp-ml">Machine Learning Basics</div>
+            <div class="competency-pill" id="comp-report">Business Reporting</div>
+            <div class="competency-pill" id="comp-clean">Data Cleaning</div>
+            <div class="competency-pill" id="comp-story">Data Storytelling</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PROJECTS ═══════════════════ -->
+  <section id="projects" class="section" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Projects</span>
+        <h2 class="section-title" id="projects-heading">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Data-driven solutions I've built</p>
+      </div>
+
+      <div class="projects-grid reveal">
+
+        <article class="project-card featured" id="project-superstore">
+          <div class="project-card-header">
+            <div class="project-icon-wrap">📦</div>
+            <div class="project-links">
+              <a href="#" class="project-link-btn" aria-label="View code" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <span class="project-featured-tag">⭐ Featured</span>
+          <h3 class="project-title">Superstore Sales Analysis</h3>
+          <p class="project-desc">
+            Comprehensive EDA and dashboard built on the Superstore dataset using Python and Power BI.
+            Identified top-performing segments, regional trends, and profit drivers with
+            interactive visualizations and KPI summaries.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">Power BI</span>
+            <span class="tech-tag">Excel</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">1M+</span><span class="metric-label">Records</span></div>
+            <div class="metric"><span class="metric-val">12</span><span class="metric-label">Dashboards</span></div>
+            <div class="metric"><span class="metric-val">40%</span><span class="metric-label">Insight Gain</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" id="project-eda">
+          <div class="project-card-header">
+            <div class="project-icon-wrap">🔍</div>
+            <div class="project-links">
+              <a href="#" class="project-link-btn" aria-label="View code">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Customer Churn Analysis</h3>
+          <p class="project-desc">
+            Built a predictive churn analysis model using Python, Pandas, and scikit-learn.
+            Visualized retention risk segments with heatmaps and correlation matrices,
+            helping identify at-risk customer groups.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Matplotlib</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">85%</span><span class="metric-label">Accuracy</span></div>
+            <div class="metric"><span class="metric-val">3</span><span class="metric-label">Models Built</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" id="project-hr-dashboard">
+          <div class="project-card-header">
+            <div class="project-icon-wrap">👥</div>
+            <div class="project-links">
+              <a href="#" class="project-link-btn" aria-label="View code">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">HR Analytics Dashboard</h3>
+          <p class="project-desc">
+            Interactive Power BI dashboard analyzing workforce metrics including
+            attrition rates, department performance, and employee satisfaction scores.
+            Presented findings to management for data-driven HR decisions.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Power BI</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">Excel</span>
+            <span class="tech-tag">DAX</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">8</span><span class="metric-label">KPIs Tracked</span></div>
+            <div class="metric"><span class="metric-val">15%</span><span class="metric-label">Attrition Drop</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" id="project-sql-sales">
+          <div class="project-card-header">
+            <div class="project-icon-wrap">📈</div>
+            <div class="project-links">
+              <a href="#" class="project-link-btn" aria-label="View code">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">SQL Sales Insights</h3>
+          <p class="project-desc">
+            Wrote complex SQL queries to analyze multi-million row sales databases,
+            generating reports on revenue trends, product performance, and customer
+            lifetime value across multiple regions and time periods.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Excel</span>
+            <span class="tech-tag">Tableau</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">25+</span><span class="metric-label">Queries</span></div>
+            <div class="metric"><span class="metric-val">10M+</span><span class="metric-label">Rows</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" id="project-forecasting">
+          <div class="project-card-header">
+            <div class="project-icon-wrap">🤖</div>
+            <div class="project-links">
+              <a href="#" class="project-link-btn" aria-label="View code">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Revenue Forecasting Model</h3>
+          <p class="project-desc">
+            Developed a time-series forecasting model using ARIMA and Prophet to predict
+            quarterly revenues with 92% accuracy. Created automated reports and
+            visualizations for stakeholder presentations.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Prophet</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Plotly</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">92%</span><span class="metric-label">Accuracy</span></div>
+            <div class="metric"><span class="metric-val">6mo</span><span class="metric-label">Forecast Range</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ INTERNSHIPS ═══════════════════ -->
+  <section id="internships" class="section section-alt" aria-labelledby="internships-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Experience</span>
+        <h2 class="section-title" id="internships-heading">Internship <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle">Real-world exposure that shaped my skills</p>
+      </div>
+
+      <div class="timeline reveal">
+
+        <div class="timeline-item" id="intern-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Data Analytics Intern</h3>
+                <p class="timeline-company">🏢 Tech Analytics Firm</p>
+              </div>
+              <span class="timeline-period">Jun 2025 – Aug 2025</span>
+            </div>
+            <ul class="timeline-tasks">
+              <li>Analysed large-scale sales datasets using Python and Pandas, identifying revenue patterns that improved quarterly decision-making by 20%.</li>
+              <li>Built automated Power BI dashboards for real-time KPI tracking across 5 business units.</li>
+              <li>Collaborated with cross-functional teams to present data insights to senior management.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Pandas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="intern-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Business Intelligence Intern</h3>
+                <p class="timeline-company">🏢 Digital Insights Co.</p>
+              </div>
+              <span class="timeline-period">Dec 2024 – Feb 2025</span>
+            </div>
+            <ul class="timeline-tasks">
+              <li>Designed and deployed interactive Excel and Power BI reports for client-facing analytics dashboards.</li>
+              <li>Wrote optimised SQL queries to extract and transform data from relational databases.</li>
+              <li>Reduced manual reporting time by 60% through automation using Python scripts.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="intern-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Python Data Analysis Intern</h3>
+                <p class="timeline-company">🏢 DataFirst Solutions</p>
+              </div>
+              <span class="timeline-period">Jun 2024 – Aug 2024</span>
+            </div>
+            <ul class="timeline-tasks">
+              <li>Performed exploratory data analysis on customer behaviour datasets using NumPy and Pandas.</li>
+              <li>Created statistical summaries and correlation analyses to support product strategy decisions.</li>
+              <li>Visualised findings using Matplotlib and Seaborn, enabling clear communication to non-technical stakeholders.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Matplotlib</span>
+              <span class="tech-tag">Seaborn</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CERTIFICATIONS ═══════════════════ -->
+  <section id="certifications" class="section" aria-labelledby="certs-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Certifications</span>
+        <h2 class="section-title" id="certs-heading">My <span class="gradient-text">Certifications</span></h2>
+        <p class="section-subtitle">Credentials that validate my expertise</p>
+      </div>
+
+      <div class="certs-grid reveal">
+
+        <div class="cert-card" id="cert-google-da">
+          <div class="cert-badge">
+            <div class="cert-logo">🎓</div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-issuer">Google</span>
+            <h3 class="cert-title">Google Data Analytics Professional Certificate</h3>
+            <p class="cert-date">📅 2025</p>
+          </div>
+          <div class="cert-status verified">✓ Verified</div>
+        </div>
+
+        <div class="cert-card" id="cert-ibm-da">
+          <div class="cert-badge">
+            <div class="cert-logo">🔷</div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-issuer">IBM</span>
+            <h3 class="cert-title">Data Analysis with Python</h3>
+            <p class="cert-date">📅 2024</p>
+          </div>
+          <div class="cert-status verified">✓ Verified</div>
+        </div>
+
+        <div class="cert-card" id="cert-microsoft-pbi">
+          <div class="cert-badge">
+            <div class="cert-logo">📊</div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-issuer">Microsoft</span>
+            <h3 class="cert-title">Power BI Data Analyst Associate (PL-300)</h3>
+            <p class="cert-date">📅 2025</p>
+          </div>
+          <div class="cert-status verified">✓ Verified</div>
+        </div>
+
+        <div class="cert-card" id="cert-sql-hackerrank">
+          <div class="cert-badge">
+            <div class="cert-logo">🗄️</div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-issuer">HackerRank</span>
+            <h3 class="cert-title">SQL (Advanced) Certificate</h3>
+            <p class="cert-date">📅 2024</p>
+          </div>
+          <div class="cert-status verified">✓ Verified</div>
+        </div>
+
+        <div class="cert-card" id="cert-python-coursera">
+          <div class="cert-badge">
+            <div class="cert-logo">🐍</div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-issuer">Coursera</span>
+            <h3 class="cert-title">Python for Everybody Specialization</h3>
+            <p class="cert-date">📅 2024</p>
+          </div>
+          <div class="cert-status verified">✓ Verified</div>
+        </div>
+
+        <div class="cert-card" id="cert-excel-microsoft">
+          <div class="cert-badge">
+            <div class="cert-logo">📗</div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-issuer">Microsoft</span>
+            <h3 class="cert-title">Excel Skills for Business Specialization</h3>
+            <p class="cert-date">📅 2024</p>
+          </div>
+          <div class="cert-status verified">✓ Verified</div>
+        </div>
+
+        <div class="cert-card" id="cert-ml-stanford">
+          <div class="cert-badge">
+            <div class="cert-logo">🤖</div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-issuer">Stanford / Coursera</span>
+            <h3 class="cert-title">Machine Learning Specialization</h3>
+            <p class="cert-date">📅 2025</p>
+          </div>
+          <div class="cert-status verified">✓ Verified</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ EDUCATION ═══════════════════ -->
+  <section id="education" class="section section-alt" aria-labelledby="education-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 — Education</span>
+        <h2 class="section-title" id="education-heading">My <span class="gradient-text">Education</span></h2>
+        <p class="section-subtitle">The academic foundation behind my skills</p>
+      </div>
+
+      <div class="education-cards reveal">
+
+        <div class="edu-card main-edu" id="edu-btech">
+          <div class="edu-icon-wrap">🎓</div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">B.Tech in Computer Science &amp; Engineering</h3>
+                <p class="edu-college">Vignan's Institute of Information Technology</p>
+                <p class="edu-location">📍 Visakhapatnam, Andhra Pradesh</p>
+              </div>
+              <div class="edu-year-badge">
+                <span>2022 – 2026</span>
+                <span class="edu-status">Final Year</span>
+              </div>
+            </div>
+            <div class="edu-details">
+              <div class="edu-detail-item">
+                <span class="detail-label">CGPA</span>
+                <span class="detail-value accent">8.5 / 10</span>
+              </div>
+              <div class="edu-detail-item">
+                <span class="detail-label">Specialisation</span>
+                <span class="detail-value">Data Analytics &amp; AI</span>
+              </div>
+              <div class="edu-detail-item">
+                <span class="detail-label">Activities</span>
+                <span class="detail-value">Data Science Club, Hackathon Team</span>
+              </div>
+            </div>
+            <div class="edu-tags">
+              <span class="tech-tag">Data Structures</span>
+              <span class="tech-tag">Algorithms</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">DBMS</span>
+              <span class="tech-tag">Statistics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card" id="edu-intermediate">
+          <div class="edu-icon-wrap">📚</div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">Intermediate (MPC) — Class XII</h3>
+                <p class="edu-college">Narayana Junior College</p>
+                <p class="edu-location">📍 Visakhapatnam, Andhra Pradesh</p>
+              </div>
+              <div class="edu-year-badge">
+                <span>2020 – 2022</span>
+              </div>
+            </div>
+            <div class="edu-details">
+              <div class="edu-detail-item">
+                <span class="detail-label">Score</span>
+                <span class="detail-value accent">96.5%</span>
+              </div>
+              <div class="edu-detail-item">
+                <span class="detail-label">Stream</span>
+                <span class="detail-value">Mathematics, Physics, Chemistry</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card" id="edu-school">
+          <div class="edu-icon-wrap">🏫</div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">Secondary School — Class X (SSC)</h3>
+                <p class="edu-college">Sri Chaitanya High School</p>
+                <p class="edu-location">📍 Visakhapatnam, Andhra Pradesh</p>
+              </div>
+              <div class="edu-year-badge">
+                <span>2019 – 2020</span>
+              </div>
+            </div>
+            <div class="edu-details">
+              <div class="edu-detail-item">
+                <span class="detail-label">GPA</span>
+                <span class="detail-value accent">10.0 / 10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACT ═══════════════════ -->
+  <section id="contact" class="section" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">07 — Contact</span>
+        <h2 class="section-title" id="contact-heading">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">I'd love to hear from recruiters and collaborators!</p>
+      </div>
+
+      <div class="contact-wrapper reveal">
+        <div class="contact-info">
+          <h3 class="contact-info-title">Let's work together</h3>
+          <p class="contact-info-text">
+            Whether you have an exciting data role, internship opportunity, or just want to chat about analytics — my inbox is always open!
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:sahithikotte@gmail.com" class="contact-link-card" id="contact-email">
+              <div class="contact-link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">sahithikotte@gmail.com</span>
+              </div>
+              <svg class="contact-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/saisahithi-kotte" target="_blank" rel="noopener noreferrer" class="contact-link-card" id="contact-linkedin">
+              <div class="contact-link-icon linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">saisahithi-kotte</span>
+              </div>
+              <svg class="contact-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+
+            <a href="https://github.com/saisahithikotte2603" target="_blank" rel="noopener noreferrer" class="contact-link-card" id="contact-github">
+              <div class="contact-link-icon github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">saisahithikotte2603</span>
+              </div>
+              <svg class="contact-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
+
+          <a href="sahithi sureproed.pdf" download class="btn btn-primary contact-resume-btn" id="contact-resume-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17v3a2 2 0 002 2h14a2 2 0 002-2v-3"/></svg>
+            Download Resume
+          </a>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Internship / Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Hi Sahithi, I'd love to discuss..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width" id="contact-submit-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            Send Message
+          </button>
+          <div class="form-success" id="form-success" role="alert" aria-live="polite" style="display:none;">
+            ✅ Thank you! Your message has been sent.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>SSK<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-tagline">Turning data into decisions.</p>
+        <div class="footer-social">
+          <a href="mailto:sahithikotte@gmail.com" aria-label="Email" class="social-icon" id="footer-email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/saisahithi-kotte" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon" id="footer-linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/saisahithikotte2603" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon" id="footer-github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+        </div>
+        <p class="footer-copy">© 2026 Sai Sahithi Kotte · Built with ❤️ &amp; Data</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
